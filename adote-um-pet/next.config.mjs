@@ -1,6 +1,8 @@
-/** @type {import('next').NextConfig} */
+// Configurações para permitir imagens externas do Petfinder
 const nextConfig = {
-  reactStrictMode: true,
-};
+  images: {
+    domains: ['photos.petfinder.com'],
+  },
+}
 
-export default nextConfig;
+module.exports = nextConfig
